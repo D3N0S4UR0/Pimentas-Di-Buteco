@@ -1,0 +1,153 @@
+<!-- Dênis Henrique | RA: 16703 --> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Favicon -->
+        <link rel="icon" href="favicon.png">
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Pimentas Di Buteco</title>
+
+		<!-- Link Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<!-- Link Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- Cabeçalho -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- Nome da Empresa -->
+				<a href="index.html" class="navbar-brand ml-3">Pimentas <span style="color:#666666">Di Buteco</span></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toogle Navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse"></div>
+
+				<div class="collapse navbar-collapse" id="navbarMenu">
+					<ul class="navbar-nav mr-auto">
+						<!-- Itens do Cabeçalho -->
+						<li class="nav-item active">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="produtos.html" class="nav-link">Produtos</a>
+						</li>
+						<li class="nav-item">
+							<a href="sobre.html" class="nav-link">Sobre</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0" action="https://lista.mercadolivre.com.br/_CustId_276972209">
+						<button class="btn menu-right-btn border" type="submit">Mercado Livre</button>
+					</form>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container-fluid p-0">
+				<div class="site-content">
+					<div class="d-flex justify-content-center">
+						<div class="d-flex flex-column">
+							<h1 class="site-title">Conheça nossos produtos</h1>
+							<p class="site-desc">Estamos no Mercado Livre!</p>
+							<div class="d-flex flex-row">
+								<input type="button" id="btn1" value="Mercado Livre" class="btn site-btn1 px-4 py-3" name="btnMercadoLivre" onclick="location.href='https://lista.mercadolivre.com.br/_CustId_276972209';">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cards de Produtos -->
+			<div class="section-1">
+				<div class="container text-center">
+					<h1 class="heading-1">Alguns de nossos molhos</h1>
+				</div>
+				<br>
+				<div class="row" id="produtoCarousel">
+					<!-- Conteúdo Aqui -->
+				</div>
+				<div class="d-flex flex-row">
+					<input type="button" id="btn2" value="Ver mais" class="btn site-btn2 px-4 py-3" name="btnProdutos" onclick="location.href='produtos.html';">
+				</div>
+			</div>
+		</main>
+		<!-- Rodapé -->
+		<footer>
+			<div class="section-2 text-center">
+				<h4 style="margin-top: 5%">Assine nossa Newsletter</h4>
+				<br>
+				<!-- Email -->
+				<form action="newsletter.php">
+					<div class="form-inline justify-content-center">
+						<input type="text" name="Email" id="email" placeholder="Seu e-mail" size="40" class="form control px-4 py-2">
+						<input type="button" value="Contate-nos" class="btn btn-danger px-4 py-2">
+					</div>
+				</form>
+				<!-- Redes Sociais -->
+				<div class="social" style="margin: 5%;">
+					<div class="d-flex flex-row justify-content-center">
+						<a href="https://www.facebook.com"><i class="fab fa-facebook-f m-2"></i></a>
+						<a href="https://www.twitter.com"><i class="fab fa-twitter m-2"></i></a>
+						<a href="https://www.instagram.com"><i class="fab fa-instagram m-2"></i></a>
+					</div>
+				</div>
+				<hr>
+				<h5 style="color: #ef5350;">© 2018 - 2019 Copyright</h5>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal();
+			sr.reveal('.site-content .d-flex');
+			sr.reveal('.section-1 .card');
+		</script>
+
+		<script type="text/javascript">
+			function converterParaJson(conteudo){
+				return conteudo.json();
+			}
+			
+			function criarDivs (conteudo){
+				console.log((conteudo));
+				for(var i = 0; i < 5; i++){
+					var s =
+					'<div class="col-md-4">'+
+						'<div class = "card shadow">'+
+							'<div class="inner">'+
+								'<img class="card-img-top" src="images/'+conteudo[i].imagemProduto+'" alt="Card image cap">'+
+							'</div>'+
+							'<div class="card-body text-center">'+
+								'<h5 class="card-title">'+conteudo[i].nomeProduto+'</h5>'+
+								'<p class="card-text cardTexto">'+conteudo[i].descricaoProduto+'</p>'+
+								'<a href="'+conteudo[i].sobreProduto+'" class="btn btn-success btnComprar">Comprar</a>'+
+							'</div>'+
+						'</div>'+
+					'</div>'+
+					'<br>'
+					var temp = document.createElement('div');
+					temp.innerHTML = s;
+					document.getElementById('produtoCarousel').appendChild(temp);
+				}
+			}
+			
+			fetch("http://localhost:3000/produtos").then(converterParaJson).then(criarDivs);
+		</script>
+	</body>
+</html>

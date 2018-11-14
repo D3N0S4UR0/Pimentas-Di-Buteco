@@ -1,0 +1,236 @@
+/* Dênis Henrique | RA: 16703 */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Roboto+Condensed|Ubuntu');
+
+body {
+	padding: 0%;
+	margin: 0%;
+	font-family: 'Roboto';
+}
+
+.navbar-brand {
+	font-size: 35px;
+	color: black !important;
+}
+
+.nav-link {
+	font-size: 16px;
+	margin: 15px;
+	color: black !important;
+	font-family: 'Roboto Condensed';
+}
+
+/* Efeito dos itens do cabeçalho */
+.nav-link:hover {
+	color: #ef5350 !important;
+}
+
+.active .nav-link {
+	color: #ef5350 !important;
+}
+
+.menu-right-btn {
+	padding: 13px 46px;
+	margin-right: 4%;
+	background-color: transparent;
+	transition: all 300ms ease-in;
+}
+
+.menu-right-btn:hover {
+	color: white;
+	background-color: #ef5350;
+}
+
+.site-content {
+	background-image: url('images/background1.jpg');
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+.site-title, .site-desc {
+	color: white;
+	font-family: 'Righteous'; 
+}
+
+.site-title {
+	margin-top: 30%;
+	margin-bottom: 6%;
+	font-size: 50px;
+
+}
+
+.site-desc {
+	font-size: 20px;
+	text-align: center;
+}
+
+.site-btn1 {
+	background-color: #ef5350;
+	color: white;
+	margin-left: 37%;
+}
+
+.site-btn1 {
+	margin-top: 5%;
+	margin-bottom: 40%;
+}
+
+.site-btn2 {
+	background-color: #ef5350;
+	color: white;
+	position: relative;
+	left: calc(50% - 112.55px/2);
+}
+
+.site-btn2 {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.btnComprar {
+	position: relative;
+	bottom: 0%; 
+}
+
+.section-1 .heading-1 {
+	margin-top: 8%;
+}
+
+.section-1 .card-text {
+	color: rgba(0, 0, 0, 0.59);
+}
+
+.section-1 {
+	margin-bottom: 8%; 
+}
+
+.card {
+	min-height: 585px;
+	width: 18rem;
+	margin-left: 18%; 
+}
+
+.social i {
+	color: #ef5350;
+	font-size: 20px;
+}
+
+/* Efeito de imagem dos cards */
+.inner {
+	overflow: hidden;
+}
+
+.inner img {
+	transition: all 1.5s ease;
+}
+
+.inner:hover img {
+	transform: scale(1.5);
+}
+
+/* Carousel */
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+
+.carousel .item {
+	min-height: 330px;
+    text-align: center;
+	overflow: hidden;
+}
+
+.carousel .item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+
+.carousel .thumb-content {
+	padding: 15px;
+}
+
+.carousel .carousel-control {
+	height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.carousel .carousel-control.left i {
+	margin-left: -3px;
+}
+
+.carousel .carousel-control.left i {
+	margin-right: -3px;
+}
+
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+
+.carousel-indicators li {	
+	background-color: #ef5350;
+}
+
+.carousel-indicators li.active {	
+	background-color: #a02826;
+}
+
+/* CSS para Tablet e Smarthphone */
+@media screen and (max-width: 768px) {
+	.section-1 .card {
+		width: 14rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.site-content .site-title {
+		font-size: 30px;
+		padding-left: 15px;
+	}
+
+	.site-content .site-btn1 {
+		margin-left: 15%;
+	}
+
+	.section-1 .heading-1 {
+		font-size: 25px;
+	}
+
+	.section-1 .col-md-4 {
+		padding: 5%;
+		margin-left: 8%;
+	}
+
+	.section-1 .card {
+		width: 15rem;
+	}
+
+	footer input[type="button"] {
+		margin-top: 5%;
+	}
+}
